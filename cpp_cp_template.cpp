@@ -1,13 +1,18 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#define int int64_t
-#define float double
+#define int long long
+#define float long double
+#define pb push_back
 #define x first
 #define y second
-typedef vector<int> vInt;
-typedef vector<vInt> Matrix;
-typedef pair<int, int> coord;
+#define For(i, a, b) for (int i = (a); i < (b); ++i)
+#define forEach(i, c) for (auto i = (c).begin(); i != (c).end(); ++i)
+#define rep(i, n) For(i, 0, n)
+#define all(c) c.begin(), c.end()
+using vect = vector<int>;
+using Matrix = vector<vect>;
+using coord = pair<int, int>;
 
 inline void fastIO();
 
