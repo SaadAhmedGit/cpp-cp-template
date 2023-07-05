@@ -1,46 +1,51 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+#define fastIO() cout.tie(0), cin.tie(0)->sync_with_stdio(0);
+
+#define float long long;
 #define int long long
-#define float long double
-#define pb push_back
 #define x first
 #define y second
-#define For(i, a, b) for (int i = (a); i < (b); ++i)
-#define forEach(i, c) for (auto i = (c).begin(); i != (c).end(); ++i)
-#define rep(i, n) For(i, 0, n)
-#define all(c) c.begin(), c.end()
-using vect = vector<int>;
-using Matrix = vector<vect>;
-using coord = pair<int, int>;
+#define all(c) (c).begin(), (c).end()
+#define rAll(c) (c).rbegin(), (c).rend()
+#define pb(v) push_back(v)
+#define ins(v) insert(v)
+#define sz(c) (int)c.size()
+#define len(c) (int)c.length()
 
-inline void fastIO();
+constexpr int MOD = 1000000007;
+constexpr int MOD2 = 998244353;
 
-void sol()
-{
-  // Write your solution here
+#define For(i, a, b) for (int i = a; i < b; ++i)
+#define rFor(i, a, b) for (int i = a; i >= b; --i)
+#define rep(i, N) For(i, 0, N)
+#define rRep(i, N) rFor(i, N, 0)
+#define forEach(i, c) for (auto i = c.begin(); i != c.end(); ++i)
+#define rForEach(i, c) for (auto i = c.rbegin(); i != c.rend(); ++i)
+
+using vi = vector<int>;
+using Mi = vector<vi>;
+using pii = pair<int, int>;
+using str = string;
+template <typename T> using vec = vector<T>;
+template <typename T> using Matrix = vec<vec<T>>;
+template <typename k, typename v> using uomap = unordered_map<k, v>;
+template <typename k, typename v> using uoset = unordered_set<k, v>;
+
+void sol() {
 }
 
-signed main()
-{
-    fastIO();
+signed main() {
 #ifdef LOCAL_ENV
+    fastIO();
     ifstream in("in.txt");
     cin.rdbuf(in.rdbuf());
 #endif
-
-    int T = 0;
+    int T = 1;
     cin >> T;
-    for (int t = 1; t <= T; t++) {
+    For(t, 1, T + 1) {
         sol();
         cout << '\n';
     }
-    return 0;
-}
-
-inline void fastIO()
-{
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
 }
