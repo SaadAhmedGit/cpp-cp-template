@@ -3,7 +3,7 @@ using namespace std;
 
 #define fastIO() cout.tie(0), cin.tie(0)->sync_with_stdio(0);
 
-#define float long long;
+#define float long double
 #define int long long
 #define x first
 #define y second
@@ -38,10 +38,10 @@ void sol() {
 
 signed main() {
 #ifdef LOCAL_ENV
-    fastIO();
     ifstream in("in.txt");
     cin.rdbuf(in.rdbuf());
 #endif
+    fastIO();
     int T = 1;
     cin >> T;
     For(t, 1, T + 1) {
